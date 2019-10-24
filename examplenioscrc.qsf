@@ -1,0 +1,637 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY "examplenioscrc"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "15.1.0"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:28:34 OCTOBER 23,2019"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK3_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK4_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_location_assignment PIN_AA16 -to CLOCK2_50
+set_location_assignment PIN_Y26 -to CLOCK3_50
+set_location_assignment PIN_K14 -to CLOCK4_50
+set_location_assignment PIN_AF14 -to CLOCK_50
+
+#============================================================
+# SEG7
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[6]
+set_location_assignment PIN_AE26 -to HEX0[0]
+set_location_assignment PIN_AE27 -to HEX0[1]
+set_location_assignment PIN_AE28 -to HEX0[2]
+set_location_assignment PIN_AG27 -to HEX0[3]
+set_location_assignment PIN_AF28 -to HEX0[4]
+set_location_assignment PIN_AG28 -to HEX0[5]
+set_location_assignment PIN_AH28 -to HEX0[6]
+set_location_assignment PIN_AJ29 -to HEX1[0]
+set_location_assignment PIN_AH29 -to HEX1[1]
+set_location_assignment PIN_AH30 -to HEX1[2]
+set_location_assignment PIN_AG30 -to HEX1[3]
+set_location_assignment PIN_AF29 -to HEX1[4]
+set_location_assignment PIN_AF30 -to HEX1[5]
+set_location_assignment PIN_AD27 -to HEX1[6]
+set_location_assignment PIN_AB23 -to HEX2[0]
+set_location_assignment PIN_AE29 -to HEX2[1]
+set_location_assignment PIN_AD29 -to HEX2[2]
+set_location_assignment PIN_AC28 -to HEX2[3]
+set_location_assignment PIN_AD30 -to HEX2[4]
+set_location_assignment PIN_AC29 -to HEX2[5]
+set_location_assignment PIN_AC30 -to HEX2[6]
+set_location_assignment PIN_AD26 -to HEX3[0]
+set_location_assignment PIN_AC27 -to HEX3[1]
+set_location_assignment PIN_AD25 -to HEX3[2]
+set_location_assignment PIN_AC25 -to HEX3[3]
+set_location_assignment PIN_AB28 -to HEX3[4]
+set_location_assignment PIN_AB25 -to HEX3[5]
+set_location_assignment PIN_AB22 -to HEX3[6]
+set_location_assignment PIN_AA24 -to HEX4[0]
+set_location_assignment PIN_Y23 -to HEX4[1]
+set_location_assignment PIN_Y24 -to HEX4[2]
+set_location_assignment PIN_W22 -to HEX4[3]
+set_location_assignment PIN_W24 -to HEX4[4]
+set_location_assignment PIN_V23 -to HEX4[5]
+set_location_assignment PIN_W25 -to HEX4[6]
+set_location_assignment PIN_V25 -to HEX5[0]
+set_location_assignment PIN_AA28 -to HEX5[1]
+set_location_assignment PIN_Y27 -to HEX5[2]
+set_location_assignment PIN_AB27 -to HEX5[3]
+set_location_assignment PIN_AB26 -to HEX5[4]
+set_location_assignment PIN_AA26 -to HEX5[5]
+set_location_assignment PIN_AA25 -to HEX5[6]
+
+#============================================================
+# KEY
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[3]
+set_location_assignment PIN_AA14 -to KEY[0]
+set_location_assignment PIN_AA15 -to KEY[1]
+set_location_assignment PIN_W15 -to KEY[2]
+set_location_assignment PIN_Y16 -to KEY[3]
+
+#============================================================
+# LED
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[9]
+set_location_assignment PIN_V16 -to LEDR[0]
+set_location_assignment PIN_W16 -to LEDR[1]
+set_location_assignment PIN_V17 -to LEDR[2]
+set_location_assignment PIN_V18 -to LEDR[3]
+set_location_assignment PIN_W17 -to LEDR[4]
+set_location_assignment PIN_W19 -to LEDR[5]
+set_location_assignment PIN_Y19 -to LEDR[6]
+set_location_assignment PIN_W20 -to LEDR[7]
+set_location_assignment PIN_W21 -to LEDR[8]
+set_location_assignment PIN_Y21 -to LEDR[9]
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QSYS_FILE platformnioscrc.qsys
+set_global_assignment -name SDC_FILE examplenioscrc.SDC
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLOCK_50 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|clk" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|clk_en" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|done" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|n[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|n[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|n[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|start" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|W_valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[155] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[156] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[157] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[158] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[159] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[160] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[161] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[162] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[163] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[164] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[165] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[166] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[167] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[168] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[169] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[170] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|wren" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[171] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|write" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[172] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[173] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[174] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[175] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[176] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[177] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[178] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[179] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[180] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[181] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[182] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[185] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[186] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[187] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[188] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[189] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[190] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[191] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[192] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[193] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[194] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[195] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[196] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[197] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[198] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[199] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[200] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[201] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[202] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[203] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|clk" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|clk_en" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|dataa[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|done" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|n[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|n[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|n[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|result[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "platformnioscrc:u0|CRC_Custom_Instruction:intelcrc_0|start" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|D_iw[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|F_pc[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "platformnioscrc:u0|platformnioscrc_nios2_gen2_0:nios2_gen2_0|platformnioscrc_nios2_gen2_0_cpu:cpu|W_valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|address[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|byteenable[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[158] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[159] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[160] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[161] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[162] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[163] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[164] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[165] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[166] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[167] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[168] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[169] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[170] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|wren" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[171] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|write" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[172] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[173] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[174] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[175] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[176] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[177] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[178] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[179] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[180] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[181] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[182] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[185] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[186] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[187] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[188] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[189] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[190] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[191] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[192] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[193] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[194] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[195] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[196] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[197] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[198] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[199] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[200] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[201] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[202] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[203] -to "platformnioscrc:u0|platformnioscrc_onchip_memory2_0:onchip_memory2_0|writedata[9]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=204" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=204" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=204" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=633" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
